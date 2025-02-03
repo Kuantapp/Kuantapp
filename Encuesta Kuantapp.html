@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuantapp - Encuesta de Finanzas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        input, select, textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ayúdanos a mejorar la transparencia financiera</h1>
+        <p>Responde esta breve encuesta y sé parte del cambio en el manejo de las finanzas personales.</p>
+        <form action="https://formspree.io/f/mkgobezg" method="POST">
+            <label>¿Usas alguna herramienta para gestionar tus finanzas?</label>
+            <select name="gestion_finanzas">
+                <option>Sí, uso una app</option>
+                <option>Sí, pero solo con hojas de cálculo</option>
+                <option>No, pero me gustaría usar una</option>
+                <option>No, no lo considero necesario</option>
+            </select>
+
+            <label>¿Tienes dudas sobre las fechas de corte y pago de tu tarjeta?</label>
+            <select name="dudas_tarjeta">
+                <option>Sí, con frecuencia</option>
+                <option>A veces</option>
+                <option>No, nunca</option>
+            </select>
+
+            <label>¿Te ha pasado que pagas intereses por olvidar la fecha de pago de tu tarjeta de crédito?</label>
+            <select name="intereses_tarjeta">
+                <option>Sí, muchas veces</option>
+                <option>Algunas veces</option>
+                <option>No, siempre pago a tiempo</option>
+            </select>
+
+            <label>¿Te gustaría recibir alertas automáticas sobre fechas de corte y pago de tus tarjetas de crédito?</label>
+            <select name="alertas_tarjeta">
+                <option>Sí, sería muy útil</option>
+                <option>Tal vez, si son personalizables</option>
+                <option>No, no lo necesito</option>
+            </select>
+
+            <label>¿Qué tanto confías en la información que te brindan los bancos sobre tus productos financieros?</label>
+            <select name="confianza_bancos">
+                <option>Mucho, siempre es clara</option>
+                <option>Regular, a veces es confusa</option>
+                <option>Poco, no siempre es transparente</option>
+            </select>
+
+            <label>Si existiera una app que te explicara productos financieros y resolviera dudas, ¿la usarías?</label>
+            <select name="usar_app">
+                <option>Sí, definitivamente</option>
+                <option>Tal vez, dependiendo de las funciones</option>
+                <option>No, no me interesa</option>
+
+            <label>¿Estarías dispuesto a pagar por una app que te ayude a mejorar tus finanzas personales y evitar cargos innecesarios?</label>
+            <select name="pago_app">
+                <option>Sí, si el costo es razonable</option>
+                <option>Dependería del valor que me aporte</option>
+                <option>No, preferiría que fuera gratis</option>
+
+            </select>
+            <label>¿Qué edad tienes?</label>
+            <select name="edad">
+                <option>Menos de 18 años</option>
+                <option>18-25 años</option>
+                <option>26-35 años</option>
+                <option>36-45 años</option>
+                <option>46 años o más</option>
+            </select>
+
+            <label>¿Qué funciones te gustaría en una app de asesor financiero con IA?</label>
+            <textarea name="funciones_deseadas" placeholder="Ejemplo: alertas de pago, análisis de gastos, etc."></textarea>
+            </select>
+
+            <label>Tu correo (opcional, si quieres recibir novedades sobre la app)</label>
+            <input type="email" name="email" placeholder="tuemail@ejemplo.com">
+
+            <button type="submit">Enviar respuestas</button>
+        </form>
+    </div>
+</body>
+</html>
